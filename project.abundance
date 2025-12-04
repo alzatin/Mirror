@@ -6,11 +6,12 @@
   "name": "Mirror",
   "ioValues": [
     {
-      "name": "Shape",
-      "ioValue": 10
+      "name": "Pivot",
+      "ioValue": 90,
+      "currentEquation": "90"
     },
     {
-      "name": "Pivot",
+      "name": "Shape",
       "ioValue": 10
     }
   ],
@@ -25,21 +26,20 @@
     {
       "atomType": "Input",
       "x": 0.031349999999999996,
-      "y": 0.2639751552795031,
+      "y": 0.2608695652173913,
       "uniqueID": "id-2034",
       "name": "Shape",
-      "type": "number"
+      "type": "geometry"
     },
     {
       "atomType": "Code",
-      "x": 0.5698143664245359,
-      "y": 0.6273291925465838,
+      "x": 0.5633575464083939,
+      "y": 0.47204968944099385,
       "uniqueID": "id-2037",
       "ioValues": [
         {
           "name": "pivot",
-          "ioValue": 90,
-          "currentEquation": "90"
+          "ioValue": 90
         }
       ],
       "codeVersion": 1,
@@ -47,8 +47,8 @@
     },
     {
       "atomType": "Rectangle",
-      "x": 0.20177562550443906,
-      "y": 0.5683229813664596,
+      "x": 0.15577078288942697,
+      "y": 0.6583850931677019,
       "uniqueID": "id-2042",
       "ioValues": [
         {
@@ -63,20 +63,21 @@
     },
     {
       "atomType": "Extrude",
-      "x": 0.30669895076674736,
-      "y": 0.6118012422360248,
+      "x": 0.27199354317998387,
+      "y": 0.7981366459627329,
       "uniqueID": "id-2046",
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 10
+          "ioValue": 1,
+          "currentEquation": "1"
         }
       ]
     },
     {
       "atomType": "Move",
-      "x": 0.4269572235673931,
-      "y": 0.6335403726708074,
+      "x": 0.40274414850686036,
+      "y": 0.7111801242236025,
       "uniqueID": "id-2050",
       "ioValues": [
         {
@@ -85,8 +86,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 10,
-          "currentEquation": "10"
+          "ioValue": 10
         },
         {
           "name": "zDist",
@@ -96,13 +96,13 @@
     },
     {
       "atomType": "Code",
-      "x": 0.4543987086359968,
-      "y": 0.32608695652173914,
+      "x": 0.3357546408393866,
+      "y": 0.32919254658385094,
       "uniqueID": "id-2071",
       "ioValues": [
         {
           "name": "pivot",
-          "ioValue": 10
+          "ioValue": 90
         }
       ],
       "codeVersion": 1,
@@ -111,15 +111,15 @@
     {
       "atomType": "Input",
       "x": 0.031349999999999996,
-      "y": 0.3779751552795031,
+      "y": 0.4503105590062112,
       "uniqueID": "id-2075",
       "name": "Pivot",
       "type": "number"
     },
     {
       "atomType": "Assembly",
-      "x": 0.6561743341404358,
-      "y": 0.7608695652173914,
+      "x": 0.6755447941888619,
+      "y": 0.5652173913043479,
       "uniqueID": "id-2079",
       "ioValues": [
         {
@@ -127,7 +127,7 @@
           "ioValue": null
         },
         {
-          "name": "Shape 2",
+          "name": "Shape 3",
           "ioValue": null
         }
       ]
@@ -140,6 +140,28 @@
       "name": "README",
       "readMeText": "Mirror a given shape",
       "global": true
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.5189669087974172,
+      "y": 0.8571428571428571,
+      "uniqueID": "id-2114",
+      "ioValues": [
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 30
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0,
+          "currentEquation": "0"
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -164,14 +186,9 @@
       "ap2ID": "id-2050"
     },
     {
-      "ap2Name": "shape",
+      "ap2Name": "geometry",
       "ap1ID": "id-2050",
-      "ap2ID": "id-2037"
-    },
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-2050",
-      "ap2ID": "id-2079"
+      "ap2ID": "id-2114"
     },
     {
       "ap2Name": "number or geometry",
@@ -187,6 +204,16 @@
       "ap2Name": "geometry",
       "ap1ID": "id-2079",
       "ap2ID": "id-2084"
+    },
+    {
+      "ap2Name": "shape",
+      "ap1ID": "id-2114",
+      "ap2ID": "id-2037"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-2114",
+      "ap2ID": "id-2079"
     }
   ],
   "unitsKey": "Unitless",
