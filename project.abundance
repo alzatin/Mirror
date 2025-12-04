@@ -37,8 +37,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.5948345439870864,
-      "y": 0.6521739130434783,
+      "x": 0.5916061339790154,
+      "y": 0.5807453416149069,
       "uniqueID": "id-2037",
       "ioValues": [
         {
@@ -47,7 +47,8 @@
         },
         {
           "name": "plane",
-          "ioValue": 1
+          "ioValue": "X",
+          "currentEquation": "X"
         }
       ],
       "codeVersion": 1,
@@ -112,8 +113,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.6916868442292171,
-      "y": 0.7080745341614907,
+      "x": 0.6892655367231638,
+      "y": 0.7919254658385093,
       "uniqueID": "id-2079",
       "ioValues": [
         {
@@ -159,8 +160,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.49798224374495564,
-      "y": 0.3167701863354037,
+      "x": 0.4971751412429379,
+      "y": 0.32919254658385094,
       "uniqueID": "id-2125",
       "ioValues": [
         {
@@ -169,7 +170,8 @@
         },
         {
           "name": "plane",
-          "ioValue": null
+          "ioValue": "X",
+          "currentEquation": "X"
         }
       ],
       "codeVersion": 1,
@@ -234,11 +236,6 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-2125",
       "ap2ID": "id-2032"
-    },
-    {
-      "ap2Name": "plane",
-      "ap1ID": "id-2130",
-      "ap2ID": "id-2125"
     }
   ],
   "unitsKey": "Unitless",
