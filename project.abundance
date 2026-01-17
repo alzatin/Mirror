@@ -6,6 +6,10 @@
   "name": "Mirror",
   "ioValues": [
     {
+      "name": "Shape",
+      "ioValue": "__GEOMETRY_INPUT__"
+    },
+    {
       "name": "Pivot",
       "ioValue": 90
     },
@@ -13,10 +17,6 @@
       "name": "Plane",
       "ioValue": "X",
       "currentEquation": "X"
-    },
-    {
-      "name": "Shape",
-      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -25,12 +25,18 @@
       "atomType": "Output",
       "x": 0.98,
       "y": 0.5,
-      "uniqueID": "id-2032"
+      "uniqueID": "id-2032",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     },
     {
       "atomType": "Input",
-      "x": 0.031349999999999996,
-      "y": 0.19,
+      "x": 0.0264,
+      "y": 0.16,
       "uniqueID": "id-2034",
       "name": "Shape",
       "type": "geometry"
@@ -48,6 +54,10 @@
         {
           "name": "plane",
           "ioValue": "X"
+        },
+        {
+          "name": "shape",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
       "codeVersion": 1,
@@ -76,6 +86,10 @@
       "uniqueID": "id-2046",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
           "name": "height",
           "ioValue": 1
         }
@@ -87,6 +101,10 @@
       "y": 0.7111801242236025,
       "uniqueID": "id-2050",
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
         {
           "name": "xDist",
           "ioValue": 0
@@ -103,8 +121,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.031349999999999996,
-      "y": 0.3447204968944099,
+      "x": 0.0264,
+      "y": 0.256,
       "uniqueID": "id-2075",
       "name": "Pivot",
       "type": "number"
@@ -131,6 +149,12 @@
       "y": 0.7236024844720497,
       "uniqueID": "id-2084",
       "name": "README",
+      "ioValues": [
+        {
+          "name": "value",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
       "readMeText": "Mirror a given shape",
       "global": true
     },
@@ -140,6 +164,10 @@
       "y": 0.7732919254658385,
       "uniqueID": "id-2114",
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
         {
           "name": "x-axis degrees",
           "ioValue": 0
@@ -163,6 +191,15 @@
         {
           "name": "pivot",
           "ioValue": 90
+        },
+        {
+          "name": "shape",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "plane",
+          "ioValue": "X",
+          "currentEquation": "X"
         }
       ],
       "codeVersion": 1,
@@ -170,8 +207,8 @@
     },
     {
       "atomType": "Input",
-      "x": 0.031349999999999996,
-      "y": 0.4627329192546583,
+      "x": 0.0264,
+      "y": 0.352,
       "uniqueID": "id-2130",
       "name": "Plane",
       "type": "string"
@@ -207,11 +244,6 @@
       "ap2Name": "pivot",
       "ap1ID": "id-2075",
       "ap2ID": "id-2125"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-2079",
-      "ap2ID": "id-2084"
     },
     {
       "ap2Name": "shape",
